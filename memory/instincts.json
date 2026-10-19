@@ -1,0 +1,52 @@
+[
+  {
+    "id": "inst-bootstrap-001",
+    "trigger": "dosya düzenlemesi tamamlandıktan sonra",
+    "action": "ecc:verify çalıştır; FAIL varsa düzeltmeden devam etme",
+    "confidence": 0.9,
+    "domain": "general",
+    "source": "bootstrap",
+    "createdAt": "2026-02-24T00:00:00.000Z",
+    "timesReinforced": 1
+  },
+  {
+    "id": "inst-bootstrap-002",
+    "trigger": "oturum kapanmadan önce",
+    "action": "ecc:save --summary ile oturum özeti yaz",
+    "confidence": 0.9,
+    "domain": "general",
+    "source": "bootstrap",
+    "createdAt": "2026-02-24T00:00:00.000Z",
+    "timesReinforced": 1
+  },
+  {
+    "id": "inst-bootstrap-003",
+    "trigger": "kod yazımı sonrası",
+    "action": "çalışma zamanı log çıktısını kontrol et (dev.log / terminal); hata varsa önce onu çöz",
+    "confidence": 0.85,
+    "domain": "general",
+    "source": "bootstrap",
+    "createdAt": "2026-02-24T00:00:00.000Z",
+    "timesReinforced": 1
+  },
+  {
+    "id": "inst-bootstrap-004",
+    "trigger": "commit veya oturum kapanışı öncesi",
+    "action": "ecc:shield çalıştır; HIGH bulgu varsa işleme devam etme",
+    "confidence": 0.85,
+    "domain": "security",
+    "source": "bootstrap",
+    "createdAt": "2026-02-24T00:00:00.000Z",
+    "timesReinforced": 1
+  },
+  {
+    "id": "inst-bootstrap-005",
+    "trigger": "karmaşık özellik isteği geldiğinde",
+    "action": "önce agents/planner.md ile plan üret, onaydan sonra koda başla",
+    "confidence": 0.8,
+    "domain": "general",
+    "source": "bootstrap",
+    "createdAt": "2026-02-24T00:00:00.000Z",
+    "timesReinforced": 1
+  }
+]

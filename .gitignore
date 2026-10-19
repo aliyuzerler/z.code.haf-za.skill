@@ -1,0 +1,8 @@
+node_modules/
+memory/session-data/*
+!memory/session-data/.gitkeep
+memory/metrics/*
+!memory/metrics/.gitkeep
+.DS_Store
+*.log
+.env

@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "ecc:context": "node ecc-z/core/context-loader.mjs",
+    "ecc:save": "node ecc-z/core/session-save.mjs",
+    "ecc:verify": "node ecc-z/core/verify.mjs",
+    "ecc:shield": "node ecc-z/core/shield-scan.mjs",
+    "ecc:sync": "node ecc-z/core/skill-sync.mjs"
+  }
+}
