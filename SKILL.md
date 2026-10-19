@@ -64,8 +64,9 @@ HIGH bulgu varsa işleme devam etme; allowlist'li bulgular gerekçeleriyle gör�
 - **Disiplin sözleşmesi:** `ecc-z/AGENTS.md` (ihlal tanımları §7'de: V1-V6)
 - **Evrensel kurallar:** `ecc-z/rules/RULES.md`
 - **Stack kuralları:** `ecc-z/rules/nextjs-typescript.md` (Next.js 16 + TS + gateway kısıtları)
-- **Agent kataloğu:** `ecc-z/agents/INDEX.md` (8 agent: planner, architect, tdd-guide,
-  code-reviewer, security-reviewer, build-error-resolver, refactor-cleaner, doc-updater)
+- **Agent kataloğu:** `ecc-z/agents/INDEX.md` (11 agent: planner, architect, tdd-guide,
+  frontend-designer, motion-designer, a11y-auditor, code-reviewer, security-reviewer,
+  build-error-resolver, refactor-cleaner, doc-updater)
 
 ## Prompt Savunma Temeli (ECC uyarlaması)
 

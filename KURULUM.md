@@ -34,7 +34,7 @@ uyarlanmış halidir. Kurduğunda şunları kazanır:
 | **Doğrulayıcı** | Her düzenlemeden sonra lint (+ istersen tsc) çalıştırır; FAIL varsa devam edilmez | `ecc-z/core/verify.mjs` |
 | **Güvenlik taraması (Shield)** | Secret sızıntısı, prompt injection, tehlikeli kod desenleri taraması | `ecc-z/core/shield-scan.mjs` |
 | **Oturum kaydedici** | Kapanışta özet + içgüdü pekiştirme + 30 gün prune | `ecc-z/core/session-save.mjs` |
-| **Agent ordusu** | 8 uzman agent (planner, architect, code-reviewer, security-reviewer, tdd-guide, build-error-resolver, refactor-cleaner, doc-updater) + yönlendirici | `ecc-z/agents/` |
+| **Agent ordusu** | 11 uzman agent (planner, architect, code-reviewer, security-reviewer, tdd-guide, build-error-resolver, refactor-cleaner, doc-updater + frontend-designer, motion-designer, a11y-auditor) + yönlendirici | `ecc-z/agents/` |
 | **Kural seti** | Evrensel kurallar + Next.js/TS stack kuralları | `ecc-z/rules/` |
 | **Skill senkronizasyonu** | Resmî ECC deposundan küratörlü skill'ler (api-design, security-review, tdd-workflow…) | `ecc-z/core/skill-sync.mjs` |
 
@@ -90,7 +90,7 @@ Kurulum şu yerleşimi yapar:
 │   ├── AGENTS.md              ← disiplin anayasası (7 madde + V1-V6 ihlal tanımları)
 │   ├── SKILL.md               ← meta-skill
 │   ├── core/                  ← 5 script + tsconfig.verify.json
-│   ├── agents/                ← 8 agent + INDEX.md (router)
+│   ├── agents/                ← 11 agent + INDEX.md (router; 8 geliştirme + 3 frontend tasarım)
 │   ├── rules/                 ← RULES.md + nextjs-typescript.md
 │   └── memory/                ← MEMORY.md, instincts.json, allowlist, manifest
 │       ├── session-data/      ← oturum özetleri (runtime)
@@ -357,7 +357,7 @@ z.code.haf-za.skill (bu repo)
 ├── PROJECT-AGENTS.md      ← proje kökü AGENTS.md şablonu
 ├── AGENTS.md              ← disiplin anayasası (ecc-z/ altına kurulur)
 ├── core/                  ← 5 çekirdek script + tsconfig.verify.json
-├── agents/                ← 8 uzman agent + INDEX.md router
+├── agents/                ← 11 uzman agent + INDEX.md router (8 geliştirme + 3 frontend tasarım)
 ├── commands/              ← 7 komut dosyası (ECC commands eşdeğeri)
 ├── hooks/                 ← hook eşlemesi + örnek hook config
 ├── workflow/              ← geliştirme döngüsü + oturum ritüeli

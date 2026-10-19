@@ -12,8 +12,9 @@
 - 📥 **Session Brief** — her oturum başında otomatik bağlam yüklemesi (bellek + içgüdüler + geçmiş)
 - ✅ **Doğrulama disiplini** — her düzenlemeden sonra lint/tsc; FAIL varsa devam yok
 - 🛡️ **Shield güvenlik taraması** — secret sızıntısı, prompt injection, tehlikeli desen taraması
-- 🤖 **8 uzman agent** — planner, architect, code-reviewer, security-reviewer, tdd-guide,
-  build-error-resolver, refactor-cleaner, doc-updater + yönlendirici (INDEX.md)
+- 🤖 **11 uzman agent** — planner, architect, code-reviewer, security-reviewer, tdd-guide,
+  build-error-resolver, refactor-cleaner, doc-updater + frontend tasarım üçlüsü
+  (frontend-designer, motion-designer, a11y-auditor) + yönlendirici (INDEX.md)
 - ⚡ **7 komut** — `/ecc-context`, `/ecc-verify`, `/ecc-shield`, `/ecc-save`, `/ecc-sync`, `/ecc-plan`, `/ecc-review`
 - 📚 **Skill senkronizasyonu** — resmî ECC (311 skill) içinden küratörlü 20 skill: geliştirme disiplini (11) + frontend arayüz tasarımı (9)
 
@@ -63,7 +64,7 @@ npm run ecc:sync --list        # katalog durumu
 ├── AGENTS.md         ← disiplin anayasası (V1-V6 ihlal tanımları)
 ├── PROJECT-AGENTS.md ← proje kökü AGENTS.md şablonu
 ├── core/             ← 5 çekirdek script (bağımlılıksız ESM)
-├── agents/           ← 8 uzman agent + INDEX.md router
+├── agents/           ← 11 uzman agent + INDEX.md router (8 geliştirme + 3 frontend tasarım)
 ├── commands/         ← 7 komut dosyası (/ecc-context, /ecc-verify, …)
 ├── hooks/            ← hook eşlemesi + hook destekleyen CLI'lar için örnek config
 ├── workflow/         ← geliştirme döngüsü, oturum ritüeli, kompozisyon desenleri
@@ -82,7 +83,7 @@ npm run ecc:sync --list        # katalog durumu
 | `workflow/` | `workflow/README.md` | ✅ eşlendi |
 | `manifest` | `memory/synced-skills.json` | ✅ eşlendi |
 | `rules/` | `rules/` | ✅ birebir |
-| `.claude/agents/` (71 agent) | `agents/` (8 küratörlü + INDEX.md router) | ✅ seçilmiş küme |
+| `.claude/agents/` (71 agent) | `agents/` (11 küratörlü + INDEX.md router) | ✅ seçilmiş küme |
 
 ## Sınırlar (dürüst not)
 
