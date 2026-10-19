@@ -15,7 +15,7 @@
 - 🤖 **8 uzman agent** — planner, architect, code-reviewer, security-reviewer, tdd-guide,
   build-error-resolver, refactor-cleaner, doc-updater + yönlendirici (INDEX.md)
 - ⚡ **7 komut** — `/ecc-context`, `/ecc-verify`, `/ecc-shield`, `/ecc-save`, `/ecc-sync`, `/ecc-plan`, `/ecc-review`
-- 📚 **Skill senkronizasyonu** — resmî ECC deposundan küratörlü skill'ler (repo içinde 11'i hazır)
+- 📚 **Skill senkronizasyonu** — resmî ECC (311 skill) içinden küratörlü 20 skill: geliştirme disiplini (11) + frontend arayüz tasarımı (9)
 
 ## Hızlı Kurulum (3 komut)
 
@@ -68,7 +68,7 @@ npm run ecc:sync --list        # katalog durumu
 ├── hooks/            ← hook eşlemesi + hook destekleyen CLI'lar için örnek config
 ├── workflow/         ← geliştirme döngüsü, oturum ritüeli, kompozisyon desenleri
 ├── rules/            ← evrensel + stack kuralları
-├── skills/           ← resmî ECC'den küratörlü 11 skill + README
+├── skills/           ← resmî ECC'den küratörlü 20 skill + README (11 geliştirme + 9 frontend tasarım)
 └── memory/           ← başlangıç belleği + skill manifest'i (üzerine yazılmaz)
 ```
 
@@ -76,7 +76,7 @@ npm run ecc:sync --list        # katalog durumu
 
 | ECC (Claude Code) | Bu repoda | Durum |
 |---|---|---|
-| `skills/` (311 skill) | `skills/` (küratörlü 11) + `core/skill-sync.mjs` | ✅ seçilmiş küme + talep üzerine senkron |
+| `skills/` (311 skill) | `skills/` (küratörlü 20: geliştirme + frontend tasarım) + `core/skill-sync.mjs` | ✅ seçilmiş küme + talep üzerine senkron |
 | `hooks/` (hook runtime) | `hooks/README.md` + AGENTS.md anayasası | ✅ eşlendi (zcode hook API'si sunmadığı için yumuşak katman) |
 | `commands/` (97 komut) | `commands/` (7 komut) + `npm run ecc:*` script'leri | ✅ eşlendi |
 | `workflow/` | `workflow/README.md` | ✅ eşlendi |

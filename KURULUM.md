@@ -230,7 +230,7 @@ Kurulumdan sonra sırayla çalıştır; hepsi geçmeli:
 | 1 | `npm run ecc:context` | "Session Brief" başlıklı çıktı: bellek + içgüdüler (≥5 bootstrap) + boş oturum listesi |
 | 2 | `npm run ecc:verify` | PASS (lint çalışır; projede lint yoksa bilgilendirir, hata değil) |
 | 3 | `npm run ecc:shield` | "0 HIGH" veya düşük sayıda bulgu raporu |
-| 4 | `npm run ecc:sync --list` | Katalog listesi (11 skill yüklü değilse "yüklü değil" işaretli) |
+| 4 | `npm run ecc:sync --list` | Katalog listesi (20 skill yüklü değilse "yüklü değil" işaretli) |
 | 5 | `npm run ecc:save --summary "kurulum testi"` | `ecc-z/memory/session-data/` altında yeni .md dosyası |
 | 6 | `npm run ecc:save --prune` | Test kaydı temizlenir (30 gün kuralı) veya sayı raporlanır |
 
@@ -362,6 +362,6 @@ z.code.haf-za.skill (bu repo)
 ├── hooks/                 ← hook eşlemesi + örnek hook config
 ├── workflow/              ← geliştirme döngüsü + oturum ritüeli
 ├── rules/                 ← kural setleri
-├── skills/                ← resmî ECC'den küratörlü 11 skill + README
+├── skills/                ← resmî ECC'den küratörlü 20 skill + README (11 geliştirme + 9 frontend tasarım)
 └── memory/                ← başlangıç belleği (MEMORY.md, instincts, manifest, allowlist)
 ```

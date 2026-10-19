@@ -2,78 +2,141 @@
   {
     "name": "api-design",
     "source": "affaan-m/ECC:skills/api-design/SKILL.md",
-    "syncedAt": "2026-10-18T23:22:02.503Z",
+    "syncedAt": "2026-10-19T17:28:10.998Z",
     "bytes": 13224,
     "why": "REST endpoint tasarımı, pagination, hata yanıtları"
   },
   {
     "name": "backend-patterns",
     "source": "affaan-m/ECC:skills/backend-patterns/SKILL.md",
-    "syncedAt": "2026-10-18T23:22:02.777Z",
+    "syncedAt": "2026-10-19T17:28:11.324Z",
     "bytes": 13349,
     "why": "Backend mimari desenleri"
   },
   {
     "name": "tdd-workflow",
     "source": "affaan-m/ECC:skills/tdd-workflow/SKILL.md",
-    "syncedAt": "2026-10-18T23:22:03.058Z",
+    "syncedAt": "2026-10-19T17:28:11.604Z",
     "bytes": 21596,
     "why": "Test-öncelikli geliştirme döngüsü"
   },
   {
     "name": "security-review",
     "source": "affaan-m/ECC:skills/security-review/SKILL.md",
-    "syncedAt": "2026-10-18T23:22:03.359Z",
+    "syncedAt": "2026-10-19T17:28:11.904Z",
     "bytes": 12955,
     "why": "Kod güvenlik inceleme kontrol listesi"
   },
   {
     "name": "agent-security-hardening",
     "source": "affaan-m/ECC:skills/agent-security-hardening/SKILL.md",
-    "syncedAt": "2026-10-18T23:22:03.651Z",
+    "syncedAt": "2026-10-19T17:28:12.210Z",
     "bytes": 10678,
     "why": "Agent/LLM yüzeyleri için güvenlik sertleştirme"
   },
   {
     "name": "react-performance",
     "source": "affaan-m/ECC:skills/react-performance/SKILL.md",
-    "syncedAt": "2026-10-18T23:22:03.941Z",
+    "syncedAt": "2026-10-19T17:28:12.539Z",
     "bytes": 18184,
     "why": "React render/memo/pattern optimizasyonu"
   },
   {
     "name": "react-patterns",
     "source": "affaan-m/ECC:skills/react-patterns/SKILL.md",
-    "syncedAt": "2026-10-18T23:22:04.290Z",
+    "syncedAt": "2026-10-19T17:28:12.902Z",
     "bytes": 11466,
     "why": "React bileşen ve state desenleri"
   },
   {
     "name": "error-handling",
     "source": "affaan-m/ECC:skills/error-handling/SKILL.md",
-    "syncedAt": "2026-10-18T23:22:04.567Z",
+    "syncedAt": "2026-10-19T17:28:13.222Z",
     "bytes": 10984,
     "why": "Hata yönetimi stratejileri"
   },
   {
     "name": "bun-runtime",
     "source": "affaan-m/ECC:skills/bun-runtime/SKILL.md",
-    "syncedAt": "2026-10-18T23:22:04.840Z",
+    "syncedAt": "2026-10-19T17:28:13.529Z",
     "bytes": 5755,
     "why": "Bun runtime özellikleri ve incelikleri"
   },
   {
     "name": "architecture-decision-records",
     "source": "affaan-m/ECC:skills/architecture-decision-records/SKILL.md",
-    "syncedAt": "2026-10-18T23:22:05.120Z",
+    "syncedAt": "2026-10-19T17:28:13.874Z",
     "bytes": 7182,
     "why": "ADR dokümantasyon pratiği"
   },
   {
     "name": "git-workflow",
     "source": "affaan-m/ECC:skills/git-workflow/SKILL.md",
-    "syncedAt": "2026-10-18T23:22:05.409Z",
+    "syncedAt": "2026-10-19T17:28:14.177Z",
     "bytes": 15308,
     "why": "Dal/commit/rebase disiplini"
+  },
+  {
+    "name": "frontend-design-direction",
+    "source": "affaan-m/ECC:skills/frontend-design-direction/SKILL.md",
+    "syncedAt": "2026-10-19T17:28:14.502Z",
+    "bytes": 8820,
+    "why": "Ürün odaklı frontend tasarım yönü: landing, dashboard, bileşen görsel kararları"
+  },
+  {
+    "name": "design-system",
+    "source": "affaan-m/ECC:skills/design-system/SKILL.md",
+    "syncedAt": "2026-10-19T17:28:14.879Z",
+    "bytes": 2815,
+    "why": "Tasarım sistemi çıkarımı/denetimi; tasarım tokenları, tutarlılık skoru"
+  },
+  {
+    "name": "make-interfaces-feel-better",
+    "source": "affaan-m/ECC:skills/make-interfaces-feel-better/SKILL.md",
+    "syncedAt": "2026-10-19T17:28:15.186Z",
+    "bytes": 4795,
+    "why": "Arayüz parlatma detayları: boşluk, tipografi, gölge, hareket, hit alanı"
+  },
+  {
+    "name": "frontend-patterns",
+    "source": "affaan-m/ECC:skills/frontend-patterns/SKILL.md",
+    "syncedAt": "2026-10-19T17:28:15.501Z",
+    "bytes": 15432,
+    "why": "React/Next.js frontend desenleri ve UI en iyi pratikleri"
+  },
+  {
+    "name": "frontend-a11y",
+    "source": "affaan-m/ECC:skills/frontend-a11y/SKILL.md",
+    "syncedAt": "2026-10-19T17:28:15.796Z",
+    "bytes": 12861,
+    "why": "React/Next.js erişilebilirlik: ARIA, klavye, odak yönetimi"
+  },
+  {
+    "name": "motion-foundations",
+    "source": "affaan-m/ECC:skills/motion-foundations/SKILL.md",
+    "syncedAt": "2026-10-19T17:28:16.124Z",
+    "bytes": 9797,
+    "why": "motion/react temel katmanı: hareket tokenları, yay ön ayarları, SSR güvenliği"
+  },
+  {
+    "name": "motion-patterns",
+    "source": "affaan-m/ECC:skills/motion-patterns/SKILL.md",
+    "syncedAt": "2026-10-19T17:28:16.418Z",
+    "bytes": 13418,
+    "why": "Üretim animasyon desenleri: buton, modal, toast, sayfa geçişi"
+  },
+  {
+    "name": "motion-advanced",
+    "source": "affaan-m/ECC:skills/motion-advanced/SKILL.md",
+    "syncedAt": "2026-10-19T17:28:16.835Z",
+    "bytes": 18800,
+    "why": "İleri hareket: sürükle-bırak, jestler, SVG çizim, useAnimate"
+  },
+  {
+    "name": "frontend-slides",
+    "source": "affaan-m/ECC:skills/frontend-slides/SKILL.md",
+    "syncedAt": "2026-10-19T17:28:17.181Z",
+    "bytes": 6559,
+    "why": "Animasyon zengini HTML sunum/arayüz sayfaları üretimi"
   }
 ]

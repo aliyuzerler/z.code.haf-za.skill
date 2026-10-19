@@ -44,6 +44,16 @@ const CURATED = [
   { name: 'bun-runtime', why: 'Bun runtime özellikleri ve incelikleri' },
   { name: 'architecture-decision-records', why: 'ADR dokümantasyon pratiği' },
   { name: 'git-workflow', why: 'Dal/commit/rebase disiplini' },
+  // Frontend arayüz tasarımı grubu (resmî ECC 311 skill içinden)
+  { name: 'frontend-design-direction', why: 'Ürün odaklı frontend tasarım yönü: landing, dashboard, bileşen görsel kararları' },
+  { name: 'design-system', why: 'Tasarım sistemi çıkarımı/denetimi; tasarım tokenları, tutarlılık skoru' },
+  { name: 'make-interfaces-feel-better', why: 'Arayüz parlatma detayları: boşluk, tipografi, gölge, hareket, hit alanı' },
+  { name: 'frontend-patterns', why: 'React/Next.js frontend desenleri ve UI en iyi pratikleri' },
+  { name: 'frontend-a11y', why: 'React/Next.js erişilebilirlik: ARIA, klavye, odak yönetimi' },
+  { name: 'motion-foundations', why: 'motion/react temel katmanı: hareket tokenları, yay ön ayarları, SSR güvenliği' },
+  { name: 'motion-patterns', why: 'Üretim animasyon desenleri: buton, modal, toast, sayfa geçişi' },
+  { name: 'motion-advanced', why: 'İleri hareket: sürükle-bırak, jestler, SVG çizim, useAnimate' },
+  { name: 'frontend-slides', why: 'Animasyon zengini HTML sunum/arayüz sayfaları üretimi' },
 ];
 
 const args = process.argv.slice(2);
