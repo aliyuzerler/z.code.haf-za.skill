@@ -14,7 +14,8 @@
 - 🛡️ **Shield güvenlik taraması** — secret sızıntısı, prompt injection, tehlikeli desen taraması
 - 🤖 **8 uzman agent** — planner, architect, code-reviewer, security-reviewer, tdd-guide,
   build-error-resolver, refactor-cleaner, doc-updater + yönlendirici (INDEX.md)
-- 📚 **Skill senkronizasyonu** — resmî ECC deposundan küratörlü skill'ler (api-design, security-review, …)
+- ⚡ **7 komut** — `/ecc-context`, `/ecc-verify`, `/ecc-shield`, `/ecc-save`, `/ecc-sync`, `/ecc-plan`, `/ecc-review`
+- 📚 **Skill senkronizasyonu** — resmî ECC deposundan küratörlü skill'ler (repo içinde 11'i hazır)
 
 ## Hızlı Kurulum (3 komut)
 
@@ -63,9 +64,25 @@ npm run ecc:sync --list        # katalog durumu
 ├── PROJECT-AGENTS.md ← proje kökü AGENTS.md şablonu
 ├── core/             ← 5 çekirdek script (bağımlılıksız ESM)
 ├── agents/           ← 8 uzman agent + INDEX.md router
+├── commands/         ← 7 komut dosyası (/ecc-context, /ecc-verify, …)
+├── hooks/            ← hook eşlemesi + hook destekleyen CLI'lar için örnek config
+├── workflow/         ← geliştirme döngüsü, oturum ritüeli, kompozisyon desenleri
 ├── rules/            ← evrensel + stack kuralları
-└── memory/           ← başlangıç belleği (kurulumda kopyalanır, üzerine yazılmaz)
+├── skills/           ← resmî ECC'den küratörlü 11 skill + README
+└── memory/           ← başlangıç belleği + skill manifest'i (üzerine yazılmaz)
 ```
+
+## ECC ile Yapısal Eşleme
+
+| ECC (Claude Code) | Bu repoda | Durum |
+|---|---|---|
+| `skills/` (311 skill) | `skills/` (küratörlü 11) + `core/skill-sync.mjs` | ✅ seçilmiş küme + talep üzerine senkron |
+| `hooks/` (hook runtime) | `hooks/README.md` + AGENTS.md anayasası | ✅ eşlendi (zcode hook API'si sunmadığı için yumuşak katman) |
+| `commands/` (97 komut) | `commands/` (7 komut) + `npm run ecc:*` script'leri | ✅ eşlendi |
+| `workflow/` | `workflow/README.md` | ✅ eşlendi |
+| `manifest` | `memory/synced-skills.json` | ✅ eşlendi |
+| `rules/` | `rules/` | ✅ birebir |
+| `.claude/agents/` (71 agent) | `agents/` (8 küratörlü + INDEX.md router) | ✅ seçilmiş küme |
 
 ## Sınırlar (dürüst not)
 

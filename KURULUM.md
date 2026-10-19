@@ -120,7 +120,11 @@ cd /tmp/ecc-z
 | `core/` | `ecc-z/core/` |
 | `agents/` | `ecc-z/agents/` |
 | `rules/` | `ecc-z/rules/` |
+| `commands/` | `ecc-z/commands/` |
+| `hooks/` | `ecc-z/hooks/` |
+| `workflow/` | `ecc-z/workflow/` |
 | `memory/` | `ecc-z/memory/` |
+| `skills/<ad>/SKILL.md` | `skills/<ad>/SKILL.md` (proje kökü — skill keşfi için) |
 | `AGENTS.md` | `ecc-z/AGENTS.md` |
 | `SKILL.md` | `ecc-z/SKILL.md` **ve** `skills/ecc-z/SKILL.md` |
 | `PROJECT-AGENTS.md` | `<proje kökü>/AGENTS.md` (yoksa; varsa içeriğini birleştir) |
@@ -198,7 +202,14 @@ npm run ecc:save --instinct "tetik::aksiyon::0.9::domain"
 > **Not:** `npm`'i kendi paket yöneticinle değiştir (bun/pnpm/yarn — komutlar aynıdır).
 > Ayrıca `npm run ecc:context` çıktısı iletiye yapıştırılmaz; agent çıktıyı okumakla yükümlüdür.
 
-### 5.3 zcode masaüstü için özel not
+### 5.3 Komut dosyaları (commands/)
+
+`ecc-z/commands/` altındaki 7 dosya, agent'ına doğrudan verebileceğin hazır prompt'lardır:
+`/ecc-context`, `/ecc-verify`, `/ecc-shield`, `/ecc-save`, `/ecc-sync`, `/ecc-plan`, `/ecc-review`.
+Hook API'si olan CLI'larda (Claude Code vb.) `ecc-z/hooks/README.md`'deki örnek config ile bu
+adımları otomatik tetikleyebilirsin.
+
+### 5.4 zcode masaüstü için özel not
 
 - zcode masaüstü proje bazlı çalışır: sistemi kurmak istediğin **her proje için** bu kurulumu
   o projenin dizininde tekrarla (install.mjs idempotent'tir — istediğin kadar çalıştırabilirsin).
@@ -337,7 +348,7 @@ ve içgüdülerin oradadır.
 
 ```
 z.code.haf-za.skill (bu repo)
-├── README.md              ← kısa tanıtım
+├── README.md              ← kısa tanıtım + ECC yapısal eşleme tablosu
 ├── KURULUM.md             ← bu rehber
 ├── ARCHITECTURE.md        ← mimari eşleme detayları
 ├── install.mjs            ← otomatik kurulum betiği
@@ -347,6 +358,10 @@ z.code.haf-za.skill (bu repo)
 ├── AGENTS.md              ← disiplin anayasası (ecc-z/ altına kurulur)
 ├── core/                  ← 5 çekirdek script + tsconfig.verify.json
 ├── agents/                ← 8 uzman agent + INDEX.md router
+├── commands/              ← 7 komut dosyası (ECC commands eşdeğeri)
+├── hooks/                 ← hook eşlemesi + örnek hook config
+├── workflow/              ← geliştirme döngüsü + oturum ritüeli
 ├── rules/                 ← kural setleri
-└── memory/                ← başlangıç belleği (MEMORY.md, instincts.json, …)
+├── skills/                ← resmî ECC'den küratörlü 11 skill + README
+└── memory/                ← başlangıç belleği (MEMORY.md, instincts, manifest, allowlist)
 ```

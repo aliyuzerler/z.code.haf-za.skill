@@ -55,3 +55,19 @@ bun run ecc:sync --list       # katalog durumu
 | `ECCZ_INSTINCT_CONFIDENCE_THRESHOLD` | 0.7 | İçgüdü eşiği |
 | `ECCZ_SESSION_COUNT` | 3 | Brief'e girer oturum özeti sayısı |
 | `ECCZ_RETENTION_DAYS` | 30 | Oturum özeti saklama süresi |
+
+## Repo Dizini ↔ ECC Eşlemesi (2026-10-19 güncellemesi)
+
+Repoya ECC'nin klasör iskeleti birebir değil, **eşlenmiş haliyle** dahildir:
+
+| ECC klasörü | Bu repodaki karşılık | Not |
+|---|---|---|
+| `skills/` (311) | `skills/` (11 küratörlü) | Tamamı için `npm run ecc:sync` (resmî kaynak) |
+| `hooks/` | `hooks/README.md` + AGENTS.md | zcode hook API'si yok → yumuşak katman + örnek config |
+| `commands/` (97) | `commands/` (7) + `ecc:*` script'leri | En sık kullanılanlar seçildi |
+| `workflow/` | `workflow/README.md` | Döngü + ritüel + kompozisyon |
+| manifest | `memory/synced-skills.json` | Kurulumla taşınır, üzerine yazılmaz |
+| `.claude/agents/` (71) | `agents/` (8) + `INDEX.md` router | Küratörlü çekirdek ekip |
+
+Sebep: ECC-Z felsefesi "context window'u optimize et, gerisini kalıcı tut" — 311 skill ve
+97 komutun tamamı taşınmaz; seçilmiş çekirdek + talep üzerine senkronizasyon tercih edilir.

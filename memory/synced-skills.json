@@ -1,1 +1,79 @@
-[]
+[
+  {
+    "name": "api-design",
+    "source": "affaan-m/ECC:skills/api-design/SKILL.md",
+    "syncedAt": "2026-10-18T23:22:02.503Z",
+    "bytes": 13224,
+    "why": "REST endpoint tasarımı, pagination, hata yanıtları"
+  },
+  {
+    "name": "backend-patterns",
+    "source": "affaan-m/ECC:skills/backend-patterns/SKILL.md",
+    "syncedAt": "2026-10-18T23:22:02.777Z",
+    "bytes": 13349,
+    "why": "Backend mimari desenleri"
+  },
+  {
+    "name": "tdd-workflow",
+    "source": "affaan-m/ECC:skills/tdd-workflow/SKILL.md",
+    "syncedAt": "2026-10-18T23:22:03.058Z",
+    "bytes": 21596,
+    "why": "Test-öncelikli geliştirme döngüsü"
+  },
+  {
+    "name": "security-review",
+    "source": "affaan-m/ECC:skills/security-review/SKILL.md",
+    "syncedAt": "2026-10-18T23:22:03.359Z",
+    "bytes": 12955,
+    "why": "Kod güvenlik inceleme kontrol listesi"
+  },
+  {
+    "name": "agent-security-hardening",
+    "source": "affaan-m/ECC:skills/agent-security-hardening/SKILL.md",
+    "syncedAt": "2026-10-18T23:22:03.651Z",
+    "bytes": 10678,
+    "why": "Agent/LLM yüzeyleri için güvenlik sertleştirme"
+  },
+  {
+    "name": "react-performance",
+    "source": "affaan-m/ECC:skills/react-performance/SKILL.md",
+    "syncedAt": "2026-10-18T23:22:03.941Z",
+    "bytes": 18184,
+    "why": "React render/memo/pattern optimizasyonu"
+  },
+  {
+    "name": "react-patterns",
+    "source": "affaan-m/ECC:skills/react-patterns/SKILL.md",
+    "syncedAt": "2026-10-18T23:22:04.290Z",
+    "bytes": 11466,
+    "why": "React bileşen ve state desenleri"
+  },
+  {
+    "name": "error-handling",
+    "source": "affaan-m/ECC:skills/error-handling/SKILL.md",
+    "syncedAt": "2026-10-18T23:22:04.567Z",
+    "bytes": 10984,
+    "why": "Hata yönetimi stratejileri"
+  },
+  {
+    "name": "bun-runtime",
+    "source": "affaan-m/ECC:skills/bun-runtime/SKILL.md",
+    "syncedAt": "2026-10-18T23:22:04.840Z",
+    "bytes": 5755,
+    "why": "Bun runtime özellikleri ve incelikleri"
+  },
+  {
+    "name": "architecture-decision-records",
+    "source": "affaan-m/ECC:skills/architecture-decision-records/SKILL.md",
+    "syncedAt": "2026-10-18T23:22:05.120Z",
+    "bytes": 7182,
+    "why": "ADR dokümantasyon pratiği"
+  },
+  {
+    "name": "git-workflow",
+    "source": "affaan-m/ECC:skills/git-workflow/SKILL.md",
+    "syncedAt": "2026-10-18T23:22:05.409Z",
+    "bytes": 15308,
+    "why": "Dal/commit/rebase disiplini"
+  }
+]

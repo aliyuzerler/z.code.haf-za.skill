@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "id": "S5",
+    "path": "skills/design/design-systems/brand-inspiration/ollama/DESIGN.md",
+    "reason": "Tasarım dokümanı; kurulum komutu sayfa tasarımında gösterilecek UI metni olarak tarif ediliyor, yürütülebilir talimat değil",
+    "reviewedAt": "2026-10-18"
+  },
+  {
+    "id": "S5",
+    "path": "skills/design/design-systems/brand-inspiration/opencode.ai/DESIGN.md",
+    "reason": "Tasarım dokümanı; kurulum komutu sayfa tasarımında gösterilecek UI metni olarak tarif ediliyor, yürütülebilir talimat değil",
+    "reviewedAt": "2026-10-18"
+  },
+  {
+    "id": "S5",
+    "path": "skills/fullstack-dev/SKILL.md",
+    "reason": "Ortamın resmî fullstack-dev skill'i; kurulum talimatı ortam sağlayıcının CDN'ine işaret ediyor ve skill'in kendi akışının parçası",
+    "reviewedAt": "2026-10-18"
+  },
+  {
+    "id": "S4",
+    "path": "src/components/ui/chart.tsx",
+    "reason": "shadcn/ui resmî chart bileşeni; grafik tema CSS değişkenlerini enjekte etmek için bilinen ve kabul edilen desen",
+    "reviewedAt": "2026-10-18"
+  },
+  {
+    "id": "S5",
+    "path": "skills/tdd-workflow/SKILL.md",
+    "reason": "Yanlış pozitif: satır, curl|sh komutlarını reddetmeyi öğreten güvenlik talimatındaki negatif örnektir (savunma metni, yürütülebilir talimat değil)",
+    "reviewedAt": "2026-10-19"
+  }
+]

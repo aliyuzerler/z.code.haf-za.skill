@@ -14,7 +14,7 @@
  *
  * Bağımlılık gerektirmez (yalnızca Node.js stdlib, >= 18).
  */
-import { cpSync, existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { cpSync, existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join, dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -41,7 +41,7 @@ if (existsSync(join(target, 'ecc-z')) && !process.argv.includes('--force')) {
 
 // 1) Sistem dosyaları (üzerine yazılabilir — sistem tarafı)
 const eccz = join(target, 'ecc-z');
-for (const dir of ['core', 'agents', 'rules']) {
+for (const dir of ['core', 'agents', 'rules', 'commands', 'hooks', 'workflow']) {
   mkdirSync(join(eccz, dir), { recursive: true });
   cpSync(join(REPO, dir), join(eccz, dir), { recursive: true });
   ok(`ecc-z/${dir}/ kopyalandı`);
@@ -61,11 +61,27 @@ for (const f of ['MEMORY.md', 'instincts.json', 'shield-allowlist.json', 'synced
 }
 ok('ecc-z/memory/session-data/ ve metrics/ hazır');
 
-// 3) Skill keşfi: Z.ai Code tarzı skills/ dizinine meta-skill
+// 3) Skill keşfi: Z.ai Code tarzı skills/ dizinine meta-skill + küratörlü skill kataloğu
 const skillDir = join(target, 'skills', 'ecc-z');
 mkdirSync(skillDir, { recursive: true });
 cpSync(join(REPO, 'SKILL.md'), join(skillDir, 'SKILL.md'));
 ok('skills/ecc-z/SKILL.md yerleştirildi (otomatik skill keşfi için)');
+
+// 3.5) Küratörlü skill kataloğu: repo/skills/<ad>/SKILL.md → hedef/skills/<ad>/SKILL.md
+const repoSkillsDir = join(REPO, 'skills');
+if (existsSync(repoSkillsDir)) {
+  let n = 0;
+  for (const entry of readdirSync(repoSkillsDir, { withFileTypes: true })) {
+    if (!entry.isDirectory()) continue;
+    const src = join(repoSkillsDir, entry.name, 'SKILL.md');
+    if (!existsSync(src)) continue;
+    const dstDir = join(target, 'skills', entry.name);
+    mkdirSync(dstDir, { recursive: true });
+    cpSync(src, join(dstDir, 'SKILL.md'));
+    n++;
+  }
+  ok(`skills/ kataloğundan ${n} skill yerleştirildi`);
+}
 
 // 4) Proje kökü AGENTS.md (agent CLI'ların otomatik okuduğu dosya)
 const rootAgents = join(target, 'AGENTS.md');
